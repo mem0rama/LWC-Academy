@@ -1,0 +1,2 @@
+//This is my first commit for the LWC academy Course
+// This is a test to learn About VSCode and Git and stuffffff
