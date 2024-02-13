@@ -1,0 +1,18 @@
+<template>
+    
+    <div style="height:300px">
+        
+        <lightning-datatable
+            key-field="id"
+            data={lstContacts}
+            columns={columns}
+            onrowaction={handleRowAction} >
+ 
+        </lightning-datatable>
+        <template if:true={displayModal} >
+            <c-sample-modal modal-title="Edit record" infocolumns={columns} oncancel={handleCloseModal} onsuccess={handleUpdateSuccess} row-fields={record} >
+                <span slot="title">{title}</span>
+            </c-sample-modal>
+        </template>
+    </div>
+</template>
